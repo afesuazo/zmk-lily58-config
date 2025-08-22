@@ -27,7 +27,7 @@
 		compatible = "worldsemi,ws2812-spi";
 
 		/* SPI */
-		reg = <0>; /* ignored, but necessary for SPI bindings */
+		reg = <0>;
 		spi-max-frequency = <4000000>;
 
 		/* WS2812 */
