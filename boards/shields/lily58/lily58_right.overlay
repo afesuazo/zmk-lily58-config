@@ -15,3 +15,8 @@
 	, <&pro_micro 19 GPIO_ACTIVE_HIGH>
 	;
 };
+
+
+&led_strip {
+	chain-length = <29>;
+};
