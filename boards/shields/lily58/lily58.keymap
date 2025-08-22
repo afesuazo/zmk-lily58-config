@@ -9,11 +9,8 @@
 #define SETTING 2
 
 
-/ {
-    /* DT fragment to override LED count */
-    &led_strip {
-        chain-length = <29>;
-    };
+&led_strip {
+    chain-length = <29>;
 };
 
 
