@@ -22,10 +22,14 @@ include:
   - board: nice_nano_v2
     shield: lily58_left
     cmake-args: >
-      -DDTC_OVERLAY_FILE="boards/nice_nano_v2.overlay;
-                          boards/shields/lily58/lily58_left.overlay"
+      -DZMK_CONFIG=${{ github.workspace }}
+      -DZMK_EXTRA_MODULES=${{ github.workspace }}
+      -DDTC_OVERLAY_FILE=${{ github.workspace }}/boards/nice_nano_v2.overlay;${{ github.workspace }}/boards/shields/lily58/lily58_left.overlay
+
   - board: nice_nano_v2
     shield: lily58_right
     cmake-args: >
-      -DDTC_OVERLAY_FILE="boards/nice_nano_v2.overlay;
-                          boards/shields/lily58/lily58_right.overlay"
+      -DZMK_CONFIG=${{ github.workspace }}
+      -DZMK_EXTRA_MODULES=${{ github.workspace }}
+      -DDTC_OVERLAY_FILE=${{ github.workspace }}/boards/nice_nano_v2.overlay;${{ github.workspace }}/boards/shields/lily58/lily58_right.overlay
+
