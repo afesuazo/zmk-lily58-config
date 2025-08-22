@@ -13,6 +13,30 @@
     chain-length = <29>;
 };
 
+behaviors {
+    mt: mod_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MT";
+        tapping-term-ms = <230>;
+        quick-tap-ms = <175>;
+        require-prior-idle-ms = <125>;
+        flavor = "tap-preferred";
+        retro-tap;
+        bindings = <&kp>, <&kp>;
+    };
+
+    lt: layer_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LT";
+        tapping-term-ms = <230>;
+        quick-tap-ms = <175>;
+        require-prior-idle-ms = <125>;
+        flavor = "tap-preferred";
+        retro-tap;
+        bindings = <&kp>, <&mo>;
+    };
+};
+
 
 / {
     keymap {
