@@ -13,11 +13,6 @@
     cs-gpios = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 };
 
-&nice_view {
-    /* Start very conservative, then increase */
-    spi-max-frequency = <250000>;
-};
-
 &led_strip {
     chain-length = <35>;
 };
