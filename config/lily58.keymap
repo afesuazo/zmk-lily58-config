@@ -10,7 +10,7 @@
 #define SETTING 2
 
 &nice_view_spi {
-    cs-gpios = <&pro_micro D4 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&pro_micro 16 GPIO_ACTIVE_HIGH>;
 };
 
 &led_strip {
