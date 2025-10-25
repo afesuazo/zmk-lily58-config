@@ -90,7 +90,7 @@
                 &kp LALT            &kp Q              &kp W              &kp E            &kp R            &kp T
                 &kp ESC             &kp A              &kp S              &kp D            &kp F            &kp G
                 &kp LSHFT           &kp Z              &kp X              &kp C            &kp V            &kp B              &win_mac_toggle WINDOWS
-                                                       &none              &kp LGUI         &lt NAV BSPC     &lt MOUSE TAB
+                                                       &none              &kp LGUI         &lt NAV BSPC     &lt NAV TAB
                 
                 // Right hand  
                                     &kp N6             &kp N7             &kp N8           &kp N9           &kp N0             &kp MINUS
@@ -130,7 +130,7 @@
                 &kp LALT            &kp Q              &kp W              &kp E            &kp R            &kp T
                 &kp ESC             &kp A              &kp S              &kp D            &kp F            &kp G
                 &kp LSHFT           &kp Z              &kp X              &kp C            &kp V            &kp B              &win_mac_toggle WINDOWS
-                                                       &none              &kp LCTRL        &lt NAV BSPC     &lt MOUSE TAB
+                                                       &none              &kp LCTRL        &lt NAV BSPC     &lt NAV TAB
                 
                 // Right hand  
                                     &kp N6             &kp N7             &kp N8           &kp N9           &kp N0             &kp MINUS
