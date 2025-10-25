@@ -43,7 +43,6 @@
     win_mac_toggle: win_mac_toggle {
         compatible = "zmk,behavior-toggle-layer";
         #binding-cells = <1>;
-        layer-number = <WINDOWS>;
         };
 
     combo_soft_off: combo_soft_off {
