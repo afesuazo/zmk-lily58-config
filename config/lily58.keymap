@@ -146,7 +146,7 @@
             bindings = <
                 &trans              &trans              &trans            &trans            &trans            &trans                                                     &trans            &trans            &trans            &trans            &trans            &trans
                 &trans              &trans              &trans            &kp LPAR          &kp RPAR          &kp PLUS                                                   &trans            &trans            &trans            &trans            &trans            &trans
-                &trans              &trans              &trans            &kp LBRC          &kp RBRC          &kp MINUS                                                  &trans            &trans            &trans            &trans            &trans            &trans
+                &trans              &trans              &trans            &kp LBRC          &kp RBRC          &kp MINUS                                                  &kp EQUAL         &trans            &trans            &trans            &trans            &trans
                 &trans              &trans              &trans            &kp LBKT          &kp RBKT          &kp ASTERISK      &trans                 &trans            &trans            &trans            &trans            &trans            &trans           &trans
                                                                           &trans            &trans            &trans            &trans                 &trans            &trans            &trans            &trans                     
             >;
