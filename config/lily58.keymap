@@ -203,7 +203,7 @@
             //                               └─────────┴─────────┴─────────┴─────────┘ └─────────┴─────────┴─────────┴─────────┘
             bindings = <
                 &trans              &trans              &trans            &trans            &trans            &trans                                                            &trans            &trans            &trans            &trans            &trans            &trans
-                &trans              &trans              &trans            &trans            &trans            &trans                                                            &mkp LCLK         &mkp MOVE_LEFT    &mkp MOVE_DOWN    &mkp MOVE_UP      &mkp MOVE_RIGHT   &mkp RCLK
+                &trans              &trans              &trans            &trans            &trans            &trans                                                            &kp LCLK          &kp MOVE_LEFT    &kp MOVE_DOWN    &kp MOVE_UP      &kp MOVE_RIGHT   &kp RCLK
                 &trans              &trans              &trans            &trans            &trans            &trans                                                            &trans            &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &trans
                 &trans              &trans              &trans            &trans            &trans            &trans           &trans                         &trans            &trans            &kp HOME          &kp PG_DN         &kp PG_UP         &kp END           &trans
                                                                           &trans            &trans            &trans           &trans                         &trans            &trans            &trans            &trans
