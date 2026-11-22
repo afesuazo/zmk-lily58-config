@@ -6,3 +6,7 @@
 config BOARD_BLELULU_RIGHT
     select SOC_NRF52840_QIAA
     select ZMK_BOARD_COMPAT
+    # Local patch: boot-mode retention so &bootloader works (see blelulu.dtsi)
+    imply RETAINED_MEM
+    imply RETENTION
+    imply RETENTION_BOOT_MODE

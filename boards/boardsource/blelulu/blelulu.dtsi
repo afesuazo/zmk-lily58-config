@@ -5,6 +5,9 @@
 
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
+// Local patch (not in Boardsource's repo): lets &bootloader reach the UF2
+// bootloader. Without it, the key only restarts the board on ZMK main / Zephyr 4.1.
+#include <common/nordic/nrf52840_uf2_boot_mode.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/kata0510/lily58.dtsi>
 #include "blelulu-pinctrl.dtsi"
