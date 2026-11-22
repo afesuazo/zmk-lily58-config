@@ -1,0 +1,13 @@
+name: Build QMK firmware (Lulu)
+on: [push, workflow_dispatch]
+
+# The reusable QMK workflow asks for write access; nothing here publishes a release.
+permissions:
+  contents: write
+
+jobs:
+  build:
+    uses: qmk/.github/.github/workflows/qmk_userspace_build.yml@main
+    with:
+      qmk_repo: qmk/qmk_firmware
+      qmk_ref: master

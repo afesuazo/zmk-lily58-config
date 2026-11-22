@@ -1,14 +1,18 @@
 manifest:
-  defaults:
-    revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    # ZMK main plus a 180-degree rotation option for the nice!view display.
+    # Boardsource's official Wireless Lily58 config builds against the same fork.
+    - name: invrtd
+      url-base: https://github.com/invrtd
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: invrtd
+      # Head of the `nice!view-180` branch on 2026-11-22, pinned so builds don't
+      # change underneath you. To move back to upstream ZMK: remote: zmkfirmware,
+      # revision: main (or v0.4 once released) and drop CONFIG_NICE_VIEW_ROTATE_180.
+      revision: 625ac59d3db0f2a68201f087a0e21bc2c3bf3cea
       import: app/west.yml
   self:
     path: config

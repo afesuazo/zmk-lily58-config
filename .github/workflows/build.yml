@@ -1,6 +1,7 @@
-name: Build ZMK firmware
+name: Build ZMK firmware (wireless Lily58)
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    # Must match the ZMK version in config/west.yml (main / Zephyr 4.1).
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
