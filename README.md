@@ -39,4 +39,6 @@ The display mounts rotated 180 degrees. That setting is already in the board fil
 
 - **ZMK:** `config/west.yml` pins a commit on [invrtd/zmk](https://github.com/invrtd/zmk) `nice!view-180`. That's ZMK `main` (Zephyr 4.1) plus a nice!view rotation option, and Boardsource's official config uses the same fork. `.github/workflows/build.yml` must stay on `@main` to match.
 - **QMK:** built as an [external userspace](https://docs.qmk.fm/newbs_external_userspace) against `qmk/qmk_firmware` `master`. Build targets are listed in `qmk.json`.
-- `boards/boardsource/blelulu/` is copied unchanged from [boardsource/wireless-lily58_zmk_config](https://github.com/boardsource/wireless-lily58_zmk_config) at `aa5a771` (MIT).
+- `boards/boardsource/blelulu/` is copied from [boardsource/wireless-lily58_zmk_config](https://github.com/boardsource/wireless-lily58_zmk_config) at `aa5a771` (MIT),
+  with one local patch: boot-mode retention in `blelulu.dtsi` and both `Kconfig.blelulu_*` files.
+  Without it, `&bootloader` only restarts the board, because Zephyr 4.1 no longer passes the reboot type to the bootloader.
